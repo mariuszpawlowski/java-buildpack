@@ -7,7 +7,7 @@ module LanguagePack
     DEFAULT_JDK_VERSION = "1.8".freeze
     JDK_URL_1_6 = "https://s3.amazonaws.com/heroku-jvm-langpack-java/openjdk6-u25-heroku-temaki.tar.gz".freeze
     JDK_URL_1_7="https://s3.amazonaws.com/heroku-jvm-langpack-java/openjdk7-u7-heroku-temaki-b30.tar.gz".freeze
-    JDK_URL_1_8="https://www.dropbox.com/s/mps8ih4zvmqqk2m/jdk-8u221-linux-x64.tar.gz?dl=0".freeze
+    JDK_URL_1_8="https://intiuss-mp.s3-eu-west-1.amazonaws.com/jdk-8u221-linux-x64.tar.gz".freeze
 
     def self.use?
       Dir.glob("**/*.jar").any? || Dir.glob("**/*.class").any?
