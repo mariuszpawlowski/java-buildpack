@@ -76,6 +76,7 @@ module LanguagePack
 
     def download_jdk(jdk_tarball)
       puts "Downloading JDK: #{jdk_download_url}"
+      puts "Downloading to: #{jdk_tarball}"
       run_with_err_output "curl --silent --location #{jdk_download_url} --output #{jdk_tarball}"
     end
 
